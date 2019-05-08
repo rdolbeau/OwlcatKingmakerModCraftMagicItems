@@ -598,6 +598,34 @@
     "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"]
   },
   {
+    "Name": "WeaponBleed",
+    "NameId": "72e79a73-a76a-45d6-95d9-ea254c883e8b",
+    "Enchantments": [
+      "ac0108944bfaa7e48aa74f407e3944e3"
+    ],
+    "CasterLevelStart": 10,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": [],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 2,
+    "OnlyForSlots": ["Weapon"],
+    "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"]
+  },
+  {
+    "Name": "Destructive",
+    "NameId": "fa1d6cf8-2990-4a76-ae7a-f4f50d41ff77",
+    "Enchantments": [
+      "57b51dd8f352e99409dee709669e164f"
+    ],
+    "CasterLevelStart": 15,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": ["3b646e1db3403b940bf620e01d2ce0c7"],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 3,
+    "OnlyForSlots": ["Weapon"],
+    "Restrictions": ["WeaponMelee"]
+  },
+  {
     "Name": "WeaponShock",
     "NameId": "7b4827cc-785f-48ab-9abc-8d14bb22ec0f",
     "Enchantments": [
@@ -667,3 +695,4 @@
     "OnlyForSlots": ["Weapon", "Shield"]
   }
 ]
+
