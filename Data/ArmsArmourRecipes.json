@@ -98,6 +98,22 @@
     "OnlyForSlots": ["Armor", "Shield"]
   },
   {
+    "Name": "ArmourShieldResistanceNegativeEnergy",
+    "NameId": "craftMagicItems-enchantment-resnegenergy-name",
+    "ParentNameId": "13a0271b-84d9-4dc2-9304-6b5c36f7131e",
+    "Enchantments": [
+      "34504fb2cecda144aaff34929ba10202",
+      "1bd448c554f14fc44878bbc983605710",
+      "27e95849860301b4ab257f72df627149"
+    ],
+    "CasterLevelStart": 7,
+    "CasterLevelMultiplier": 4,
+    "PrerequisiteSpells": ["0413915f355a38146bc6ad40cdf27b3f"],
+    "CostType": "CasterLevel",
+    "CostFactor": 10000,
+    "OnlyForSlots": ["Armor", "Shield"]
+  },
+  {
     "Name": "ArmourCelestial",
     "NameId": "45af0f94-877c-4830-99df-04976721ad37",
     "Enchantments": [

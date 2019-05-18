@@ -358,5 +358,9 @@
 	{
 	"Key": "craftMagicItems-enchantment-abilityinsight-name",
 	"Value": "Ability (Insight)"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-resnegenergy-name",
+	"Value": "Negative Energy Resistance"
 	}
 ]
