@@ -346,5 +346,17 @@
 	{
       "Key": "craftMagicItems-item-boots-striding-springing-description",
       "Value": "These boots increase the wearer’s base land speed by 10 feet. In addition to this striding ability (considered an enhancement bonus), these boots allow the wearer to make great leaps, granting a +5 competence bonus to Mobility checks."
+	},
+	{
+	"Key": "craftMagicItems-enchantment-savingthrowsluck-name",
+	"Value": "Saving Throw (Luck)"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-savingthrows-name",
+	"Value": "Saving Throw (Resistance)"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-abilityinsight-name",
+	"Value": "Ability (Insight)"
 	}
 ]

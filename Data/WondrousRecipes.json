@@ -1,7 +1,8 @@
 [
   {
     "Name": "SavingThrows",
-    "NameId": "124d712a-0c33-4880-bbdc-1277ecd334d9",
+    "ParentNameId": "124d712a-0c33-4880-bbdc-1277ecd334d9",
+    "NameId": "craftMagicItems-enchantment-savingthrows-name",
     "BonusTypeId": "28a47065-5d76-4664-919c-eca78bbd1055",
     "Enchantments": [
       "5d72c31d28d049a48800d8b9b47cf690",
@@ -19,11 +20,16 @@
   },
   {
     "Name": "SavingThrowsLuck",
-    "NameId": "dd84e7ec-57d1-4cba-86aa-a3fcc52f3f3d",
+    "ParentNameId": "124d712a-0c33-4880-bbdc-1277ecd334d9",
+    "NameId": "craftMagicItems-enchantment-savingthrowsluck-name",
     "BonusTypeId": "cb5ba53a-0b3d-48a3-8f0f-dc84599fb5dd",
     "Enchantments": [
       "197fa90c67ed31743a85a6c48f7b1993",
-      "4fb980c5075c61f4395372f2e84292d8"
+      "4fb980c5075c61f4395372f2e84292d8",
+      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=3)",
+      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=4)",
+      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=5)",
+      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=6)"
     ],
     "CasterLevelStart": 5,
     "CasterLevelMultiplier": 3,
@@ -89,7 +95,9 @@
       "25ea4926377d23b48bf6f225e8a831a3",
       "f4088bbd8c450ae4498c056f932d1c8e",
       "04a1ff33d8f45de46a3ba819aa343a1e",
-      "eff702c8c75385e409de56c32b81c48b"
+      "eff702c8c75385e409de56c32b81c48b",
+      "eff702c8c75385e409de56c32b81c48b#CraftMagicItems(Component[0].Value=9)",
+      "eff702c8c75385e409de56c32b81c48b#CraftMagicItems(Component[0].Value=10)"
     ],
     "CasterLevelStart": 2,
     "CasterLevelMultiplier": 2,
