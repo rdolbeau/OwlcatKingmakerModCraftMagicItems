@@ -362,5 +362,9 @@
 	{
 	"Key": "craftMagicItems-enchantment-resnegenergy-name",
 	"Value": "Negative Energy Resistance"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-grenadier-name",
+	"Value": "Grenadier"
 	}
 ]

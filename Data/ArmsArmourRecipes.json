@@ -129,6 +129,19 @@
     "Restrictions": ["ArmourMetal", "EnhancmentBonus3"]
   },
   {
+    "Name": "ArmourGrenadier",
+    "NameId": "craftMagicItems-enchantment-grenadier-name",
+    "Enchantments": [
+      "22cef8e691a75674d8bc33ea986ea4fa"
+    ],
+    "CasterLevelStart": 5,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": [ "9d504f8dff6e93b4ab6afc938ed6a23d" ],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 2,
+    "OnlyForSlots": ["Armor"]
+  },
+  {
     "Name": "ShieldEnhancementBonus",
     "NameId": "7901b076-42d2-401e-a8e3-9ce0d4aa12df",
     "Enchantments": [
