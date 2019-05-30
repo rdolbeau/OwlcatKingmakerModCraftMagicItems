@@ -722,6 +722,18 @@
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 1,
     "OnlyForSlots": ["Weapon", "Shield"]
+  },
+  {
+    "Name": "WeaponProtector",
+    "NameId": "craftMagicItems-enchantment-protector-name",
+    "Enchantments": [
+      "d3118dd2796883645a56c888880ecfba"
+    ],
+    "CasterLevelStart": 9,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": [ ],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 1,
+    "OnlyForSlots": ["Weapon"]
   }
 ]
-

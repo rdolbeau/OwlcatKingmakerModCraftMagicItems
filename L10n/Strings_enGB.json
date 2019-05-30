@@ -366,5 +366,9 @@
 	{
 	"Key": "craftMagicItems-enchantment-grenadier-name",
 	"Value": "Grenadier"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-protector-name",
+	"Value": "Protector"
 	}
 ]
