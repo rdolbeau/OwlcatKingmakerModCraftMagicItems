@@ -370,5 +370,9 @@
 	{
 	"Key": "craftMagicItems-enchantment-protector-name",
 	"Value": "Protector"
+	},
+	{
+	"Key": "craftMagicItems-enchantment-skillinsight-name",
+	"Value": "Skill (Insight)"
 	}
 ]
