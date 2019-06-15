@@ -102,7 +102,7 @@
       "fedfe06fec617c8429b2db25eb584cd6#CraftMagicItems(enchantments=(),visual=5f5ae4248e3d2bb479007ac219a8e3c2)",
       "fedfe06fec617c8429b2db25eb584cd6#CraftMagicItems(enchantments=(),visual=1575d992db377af4298d966cdeaca1be)"
     ],
-    "RecipeFileNames": ["CommonRecipes.json", "WondrousRecipes.json"],
+    "RecipeFileNames": ["CommonRecipes.json", "CommonRecipesExtra.json", "WondrousRecipes.json", "WondrousRecipesExtra.json"],
     "Slots": ["Belt", "Feet", "Gloves", "Head", "Neck", "Shoulders", "Wrist", "Usable"]
   },
   {
@@ -112,7 +112,7 @@
     "FeatGuid": "7f2b282626862e345935bbea5e66424b#CraftMagicItems(feat=arms-armour)",
     "MinimumCasterLevel": 5,
     "PrerequisitesMandatory": false,
-    "RecipeFileNames": ["ArmsArmourRecipes.json"],
+    "RecipeFileNames": ["ArmsArmourRecipes.json", "ArmsArmourRecipesExtra.json"],
     "Slots": ["Armor", "Shield", "Weapon"]
   },
   {
@@ -130,7 +130,7 @@
       "70dadcb5b5184e746a7ee1b8e43b8b63",
       "cd59e06babb67514da00e94b3269a639"
     ],
-    "RecipeFileNames": ["CommonRecipes.json", "RingRecipes.json"],
+    "RecipeFileNames": ["CommonRecipes.json", "CommonRecipesExtra.json", "RingRecipes.json"],
     "Slots": ["Ring"]
   },
   {

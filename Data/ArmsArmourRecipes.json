@@ -98,22 +98,6 @@
     "OnlyForSlots": ["Armor", "Shield"]
   },
   {
-    "Name": "ArmourShieldResistanceNegativeEnergy",
-    "NameId": "craftMagicItems-enchantment-resnegenergy-name",
-    "ParentNameId": "13a0271b-84d9-4dc2-9304-6b5c36f7131e",
-    "Enchantments": [
-      "34504fb2cecda144aaff34929ba10202",
-      "1bd448c554f14fc44878bbc983605710",
-      "27e95849860301b4ab257f72df627149"
-    ],
-    "CasterLevelStart": 7,
-    "CasterLevelMultiplier": 4,
-    "PrerequisiteSpells": ["0413915f355a38146bc6ad40cdf27b3f"],
-    "CostType": "CasterLevel",
-    "CostFactor": 10000,
-    "OnlyForSlots": ["Armor", "Shield"]
-  },
-  {
     "Name": "ArmourCelestial",
     "NameId": "45af0f94-877c-4830-99df-04976721ad37",
     "Enchantments": [
@@ -127,19 +111,6 @@
     "CostFactor": 13100,
     "OnlyForSlots": ["Armor"],
     "Restrictions": ["ArmourMetal", "EnhancmentBonus3"]
-  },
-  {
-    "Name": "ArmourGrenadier",
-    "NameId": "craftMagicItems-enchantment-grenadier-name",
-    "Enchantments": [
-      "22cef8e691a75674d8bc33ea986ea4fa"
-    ],
-    "CasterLevelStart": 5,
-    "CasterLevelMultiplier": 0,
-    "PrerequisiteSpells": [ "9d504f8dff6e93b4ab6afc938ed6a23d" ],
-    "CostType": "EnhancementLevelSquared",
-    "CostFactor": 2,
-    "OnlyForSlots": ["Armor"]
   },
   {
     "Name": "ShieldEnhancementBonus",
@@ -627,34 +598,6 @@
     "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"]
   },
   {
-    "Name": "WeaponBleed",
-    "NameId": "72e79a73-a76a-45d6-95d9-ea254c883e8b",
-    "Enchantments": [
-      "ac0108944bfaa7e48aa74f407e3944e3"
-    ],
-    "CasterLevelStart": 10,
-    "CasterLevelMultiplier": 0,
-    "PrerequisiteSpells": [],
-    "CostType": "EnhancementLevelSquared",
-    "CostFactor": 2,
-    "OnlyForSlots": ["Weapon"],
-    "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"]
-  },
-  {
-    "Name": "Destructive",
-    "NameId": "fa1d6cf8-2990-4a76-ae7a-f4f50d41ff77",
-    "Enchantments": [
-      "57b51dd8f352e99409dee709669e164f"
-    ],
-    "CasterLevelStart": 15,
-    "CasterLevelMultiplier": 0,
-    "PrerequisiteSpells": ["3b646e1db3403b940bf620e01d2ce0c7"],
-    "CostType": "EnhancementLevelSquared",
-    "CostFactor": 3,
-    "OnlyForSlots": ["Weapon"],
-    "Restrictions": ["WeaponMelee"]
-  },
-  {
     "Name": "WeaponShock",
     "NameId": "7b4827cc-785f-48ab-9abc-8d14bb22ec0f",
     "Enchantments": [
@@ -722,18 +665,5 @@
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 1,
     "OnlyForSlots": ["Weapon", "Shield"]
-  },
-  {
-    "Name": "WeaponProtector",
-    "NameId": "craftMagicItems-enchantment-protector-name",
-    "Enchantments": [
-      "d3118dd2796883645a56c888880ecfba"
-    ],
-    "CasterLevelStart": 9,
-    "CasterLevelMultiplier": 0,
-    "PrerequisiteSpells": [ ],
-    "CostType": "EnhancementLevelSquared",
-    "CostFactor": 1,
-    "OnlyForSlots": ["Weapon"]
   }
 ]

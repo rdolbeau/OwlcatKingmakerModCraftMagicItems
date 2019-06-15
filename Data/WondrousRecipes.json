@@ -19,25 +19,6 @@
     "CostFactor": 1000
   },
   {
-    "Name": "SavingThrowsLuck",
-    "ParentNameId": "124d712a-0c33-4880-bbdc-1277ecd334d9",
-    "NameId": "craftMagicItems-enchantment-savingthrowsluck-name",
-    "BonusTypeId": "cb5ba53a-0b3d-48a3-8f0f-dc84599fb5dd",
-    "Enchantments": [
-      "197fa90c67ed31743a85a6c48f7b1993",
-      "4fb980c5075c61f4395372f2e84292d8",
-      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=3)",
-      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=4)",
-      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=5)",
-      "4fb980c5075c61f4395372f2e84292d8#CraftMagicItems(Component[0].Value=6)"
-    ],
-    "CasterLevelStart": 5,
-    "CasterLevelMultiplier": 3,
-    "PrerequisiteSpells": ["061041f379a5ced4090e49ac0e69cc4e"],
-    "CostType": "LevelSquared",
-    "CostFactor": 5000
-  },
-  {
     "Name": "NaturalArmorBonus",
     "NameId": "3d317ad4-de7b-438c-89fc-2333d4e2595b",
     "BonusTypeId": "696d7c0e-f960-4b92-a703-01d8ff9c0674",
@@ -159,72 +140,6 @@
     "CrafterPrerequisites": ["FeatureChannelEnergy"],
     "CostType": "LevelSquared",
     "CostFactor": 4000
-  },
-  {
-    "Name": "ManualOfBodilyHealth",
-    "NameId": "a5e6a9cc-1e52-4829-bda3-195b94729734",
-    "Enchantments": [],
-    "ResultItem": "2d4d510a69da09c48893f945ec197210",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
-  },
-  {
-    "Name": "ManualOfGainfulExercise",
-    "NameId": "53ab33ab-784f-40bf-a9aa-330b21cede02",
-    "Enchantments": [],
-    "ResultItem": "7a7b1dfa67aa4544aa468d0558b1f667",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
-  },
-  {
-    "Name": "ManualOfQuicknessOfAction",
-    "NameId": "a74675cb-19e2-4d1b-a5d8-38037f0e6204",
-    "Enchantments": [],
-    "ResultItem": "b8ea6d2f787c7004c9cab9f519f687f8",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
-  },
-  {
-    "Name": "TomeOfClearThought",
-    "NameId": "eb8f082a-cdf0-4c9e-aa01-b65ea14bfccc",
-    "Enchantments": [],
-    "ResultItem": "3584c2a2f8b5b1b43ae11128f0ff1583",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
-  },
-  {
-    "Name": "TomeOfLeadershipAndInfluence",
-    "NameId": "5f7873a2-3fd9-45e5-a5f7-5df4f200ba6f",
-    "Enchantments": [],
-    "ResultItem": "37e2f09923a96234ca486bc9db0b6ad6",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
-  },
-  {
-    "Name": "TomeOfUnderstanding",
-    "NameId": "6fff11a4-2dbd-4117-8510-8249cda2a172",
-    "Enchantments": [],
-    "ResultItem": "419a486154514594c99193da785d4302",
-    "CasterLevelStart": 17,
-    "PrerequisiteSpells": [],
-    "CostType": "Flat",
-    "CostFactor": 110000,
-    "OnlyForSlots": ["Usable"]
   },
   {
     "Name": "BagOfHolding",
