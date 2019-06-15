@@ -374,5 +374,9 @@
 	{
 	"Key": "craftMagicItems-enchantment-skillinsight-name",
 	"Value": "Skill (Insight)"
-	}
+	},
+        {
+        "Key": "craftMagicItems-enchantment-skillluck-name",
+        "Value": "Skill (Luck)"
+        }
 ]
