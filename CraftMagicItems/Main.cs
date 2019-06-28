@@ -3264,5 +3264,124 @@ namespace CraftMagicItems {
             }
         }
         
+
+
+        /* up max characterlevel to 29, still need to fix some stuff */
+        public static void updateXPTable()
+        {
+            if (Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses.Length < 30)
+            {
+                int thebase = Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses[20];
+                int theincr = 2 * (thebase - Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses[19]);
+                System.Array.Resize(ref Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses, 30);
+                for (int i = 21; i <= 29; i++)
+                {
+                    thebase += theincr;
+                    theincr *= 2;
+                    Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses.SetValue(thebase, i);
+                }
+            }
+        }
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UnitLogic.Class.LevelUp.LevelUpController), "GetEffectiveLevel")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch1
+        {
+            // ReSharper disable once UnusedMember.Local
+            private static bool Prefix(UnitEntityData unit, int __result)
+            {
+                updateXPTable();
+                unit = (unit ?? Game.Instance.Player.MainCharacter.Value);
+			    int? num = (unit != null) ? new int?(unit.Descriptor.Progression.CharacterLevel) : null;
+                int i = (num == null) ? 1 : num.Value;
+                int? num2 = (unit != null) ? new int?(unit.Descriptor.Progression.Experience) : null;
+                int num3 = (num2 == null) ? 1 : num2.Value;
+			    while (i< 29)
+			    {
+                    if (Game.Instance.BlueprintRoot.Progression.XPTable.GetBonus(i + 1) > num3)
+				    {
+                        break;
+				    }
+				    i++;
+			    }
+                __result = i;
+                return false;
+            }
+        }
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UnitLogic.Class.LevelUp.LevelUpController), "CanLevelUp")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch2
+        {
+            private static bool Prefix(UnitDescriptor unit, ref bool __result)
+            {
+                updateXPTable();
+                __result = false;
+                if (Game.Instance.Player.IsInCombat)
+                {
+                    return false;
+                }
+                if (unit.State.IsDead)
+                {
+                    return false;
+                }
+                int characterLevel = unit.Progression.CharacterLevel;
+                if (characterLevel >= 29)
+                {
+                    return false;
+                }
+                int bonus = Game.Instance.BlueprintRoot.Progression.XPTable.GetBonus(characterLevel + 1);
+                __result = bonus <= unit.Progression.Experience;
+                return false;
+            }
+        }
+
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UI.ServiceWindow.CharacterScreen.CharSLevel), "FillData")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch3
+        {
+            private static bool Prefix()
+            {
+                updateXPTable();
+                return true;
+            }
+        }
+
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UI.ServiceWindow.CharSheetCommonLevel), "Initialize")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch4
+        {
+            private static bool Prefix()
+            {
+                updateXPTable();
+                return true;
+            }
+        }
+
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UnitLogic.UnitProgressionData), "AddClassLevel")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch5
+        {
+            private static bool Prefix()
+            {
+                updateXPTable();
+                return true;
+            }
+        }
+
+        /* random dungeon stuff */
+        /* log the dungeon stages */
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.Dungeon.DungeonStageInitializer), "Initialize")]
+        // ReSharper disable once UnusedMember.Local
+        private static class DungeonStuffPatch1
+        {
+            private static bool Prefix()
+            {
+                UberLogger.Logger.Enabled = true;
+                return true;
+            }
+            private static void Postfix()
+            {
+                UberLogger.Logger.Enabled = false;
+            }
+        }
     }
 }
