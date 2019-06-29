@@ -3269,6 +3269,8 @@ namespace CraftMagicItems {
         /* up max characterlevel to 29, still need to fix some stuff */
         public static void updateXPTable()
         {
+            /* add XP using the doubling-previous-level-need rule from PNP */
+            /* beyond 29 impossible, as it requires > 2**31 XP ... */
             if (Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses.Length < 30)
             {
                 int thebase = Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses[20];
@@ -3279,6 +3281,21 @@ namespace CraftMagicItems {
                     thebase += theincr;
                     theincr *= 2;
                     Game.Instance.BlueprintRoot.Progression.XPTable.Bonuses.SetValue(thebase, i);
+                }
+            }
+            /* extend the feat-per-character-level table */
+            if (Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries.Length < 15)
+            {
+                ModEntry.Logger.Warning($"Expanding Feat table duplicating {Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[9]}");
+                System.Array.Resize(ref Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries, 15);
+                for (int i = 10; i < 15; i++)
+                {
+                    Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i] = 
+                        new LevelEntry();
+                    Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i].Level = i * 2 + 1;
+                    Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i].Features =
+                            Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[9].Features;
+                    ModEntry.Logger.Warning($"Added {Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i]}");
                 }
             }
         }
@@ -3363,6 +3380,19 @@ namespace CraftMagicItems {
             private static bool Prefix()
             {
                 updateXPTable();
+                return true;
+            }
+        }
+
+        /* Ugly hack to avoid the UI crashing when adding at level > 20 */
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UI.ServiceWindow.CharacterScreen.CharSComponentFeatsBlock), "GenerateUIFeature")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch6
+        {
+            private static bool Prefix(ref int level)
+            {
+                if (level > 20)
+                    level = 41 - level;
                 return true;
             }
         }
