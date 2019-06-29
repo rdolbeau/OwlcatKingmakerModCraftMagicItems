@@ -113,8 +113,8 @@
     "Enchantments": [
       "f5d0bf8c1b4574848acb8d1fbb544807",
       "e988cf802d403d941b2ed8b6016de68f",
-      "e988cf802d403d941b2ed8b6016de68f#CraftMagicItems(Components[0].Bonus=6,Components[1].Bonus=6,Components[2].Bonus=6,Components[3].Bonus=6,Components[4].Bonus=6,Components[5].Bonus=6,Components[6].Bonus=6,Components[7].Bonus=6,Components[8].Bonus=6)",
-      "e988cf802d403d941b2ed8b6016de68f#CraftMagicItems(Components[0].Bonus=8,Components[1].Bonus=8,Components[2].Bonus=8,Components[3].Bonus=8,Components[4].Bonus=8,Components[5].Bonus=8,Components[6].Bonus=8,Components[7].Bonus=8,Components[8].Bonus=8)"
+      "e988cf802d403d941b2ed8b6016de68f#CraftMagicItems(Component[0].Bonus=6,Component[1].Bonus=6,Component[2].Bonus=6,Component[3].Bonus=6,Component[4].Bonus=6,Component[5].Bonus=6,Component[6].Bonus=6,Component[7].Bonus=6,Component[8].Bonus=6)",
+      "e988cf802d403d941b2ed8b6016de68f#CraftMagicItems(Component[0].Bonus=8,Component[1].Bonus=8,Component[2].Bonus=8,Component[3].Bonus=8,Component[4].Bonus=8,Component[5].Bonus=8,Component[6].Bonus=8,Component[7].Bonus=8,Component[8].Bonus=8)"
     ],
     "CasterLevelStart": 5,
     "CasterLevelMultiplier": 5,
@@ -131,7 +131,9 @@
     "BonusTypeId": "",
     "Enchantments": [
       "60f06749fa4729c49bc3eb2eb7e3b316",
-      "cb4a39044b59f5e47ad5bc08ff9d6669"
+      "cb4a39044b59f5e47ad5bc08ff9d6669",
+      "cb4a39044b59f5e47ad5bc08ff9d6669#CraftMagicItems(Component[0].Bonus=6,Component[1].Bonus=6,Component[2].Bonus=6)",
+      "cb4a39044b59f5e47ad5bc08ff9d6669#CraftMagicItems(Component[0].Bonus=8,Component[1].Bonus=8,Component[2].Bonus=8)"
     ],
     "CasterLevelStart": 5,
     "CasterLevelMultiplier": 5,
