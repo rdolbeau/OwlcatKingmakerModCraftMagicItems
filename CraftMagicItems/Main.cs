@@ -3286,7 +3286,6 @@ namespace CraftMagicItems {
             /* extend the feat-per-character-level table */
             if (Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries.Length < 15)
             {
-                ModEntry.Logger.Warning($"Expanding Feat table duplicating {Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[9]}");
                 System.Array.Resize(ref Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries, 15);
                 for (int i = 10; i < 15; i++)
                 {
@@ -3295,10 +3294,73 @@ namespace CraftMagicItems {
                     Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i].Level = i * 2 + 1;
                     Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i].Features =
                             Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[9].Features;
-                    ModEntry.Logger.Warning($"Added {Game.Instance.BlueprintRoot.Progression.FeatsProgression.LevelEntries[i]}");
                 }
             }
+
+            string[] spontidlist = { "b3a505fb61437dc4097f43c3f8f9a4cf" /* sorcerer */};
+            foreach (string spontid in spontidlist)
+            {
+                BlueprintCharacterClass sorcerer = ResourcesLibrary.TryGetBlueprint<BlueprintCharacterClass>(spontid);
+                if (sorcerer != null && sorcerer.Spellbook.SpellsPerDay.Levels.Length < 30)
+                {
+                    ModEntry.Logger.Warning($"Fixing {sorcerer.Name} SpellsPerDay & SpellsKnown");
+                    System.Array.Resize(ref sorcerer.Spellbook.SpellsPerDay.Levels, 30);
+                    System.Array.Resize(ref sorcerer.Spellbook.SpellsKnown.Levels, 30);
+                    for (int i = 21; i < 30; i++)
+                    {
+                        sorcerer.Spellbook.SpellsPerDay.Levels[i] = new SpellsLevelEntry();
+                        sorcerer.Spellbook.SpellsPerDay.Levels[i].Count = new int[10]; // going beyond LvL9 crashes the UI
+                        sorcerer.Spellbook.SpellsPerDay.Levels[i].Count[0] = 0;
+                        for (int j = 1; j < 10; j++)
+                        {
+                            sorcerer.Spellbook.SpellsPerDay.Levels[i].Count[j] =
+                                sorcerer.Spellbook.SpellsPerDay.Levels[i - 1].Count[j];
+                        }
+                        // add a Lvl9 + Lvl1, Lvl9 + Lvl2, etc. instead
+                        sorcerer.Spellbook.SpellsPerDay.Levels[i].Count[9]++;
+                        sorcerer.Spellbook.SpellsPerDay.Levels[i].Count[i - 20]++;
+
+                        sorcerer.Spellbook.SpellsKnown.Levels[i] = new SpellsLevelEntry();
+                        sorcerer.Spellbook.SpellsKnown.Levels[i].Count = new int[10]; // going beyond LvL9 crashes the UI
+                        sorcerer.Spellbook.SpellsKnown.Levels[i].Count[0] = 0;
+                        for (int j = 1; j < 10; j++)
+                        {
+                            sorcerer.Spellbook.SpellsKnown.Levels[i].Count[j] =
+                                sorcerer.Spellbook.SpellsKnown.Levels[i - 1].Count[j];
+                        }
+                        // arbitrary no bonus, fixme
+                    }
+                }
+            }
+
+            string[] learnidlist = { "ba34257984f4c41408ce1dc2004e342e" /* wizard */,
+                                     "67819271767a9dd4fbfd4ae700befea0" /* cleric */};
+            // "799265ebe0ed27641b6d415251943d03" /* crusader */
+            foreach (string learnid in learnidlist)
+            {
+                BlueprintCharacterClass wizard = ResourcesLibrary.TryGetBlueprint<BlueprintCharacterClass>(learnid);
+                if (wizard != null && wizard.Spellbook.SpellsPerDay.Levels.Length < 30)
+                {
+                    ModEntry.Logger.Warning($"Fixing {wizard.Name} SpellsPerDay");
+                    System.Array.Resize(ref wizard.Spellbook.SpellsPerDay.Levels, 30);
+                    for (int i = 21; i < 30; i++)
+                    {
+                        wizard.Spellbook.SpellsPerDay.Levels[i] = new SpellsLevelEntry();
+                        wizard.Spellbook.SpellsPerDay.Levels[i].Count = new int[10]; // going beyond LvL9 crashes the UI
+                        wizard.Spellbook.SpellsPerDay.Levels[i].Count[0] = 0;
+                        for (int j = 1; j < 10; j++)
+                        {
+                            wizard.Spellbook.SpellsPerDay.Levels[i].Count[j] = wizard.Spellbook.SpellsPerDay.Levels[i - 1].Count[j];
+                        }
+                        // add a Lvl9 + Lvl1, Lvl9 + Lvl2, etc. instead
+                        wizard.Spellbook.SpellsPerDay.Levels[i].Count[9]++;
+                        wizard.Spellbook.SpellsPerDay.Levels[i].Count[i - 20]++;
+                    }
+                }
+            }
+
         }
+
         [Harmony12.HarmonyPatch(typeof(Kingmaker.UnitLogic.Class.LevelUp.LevelUpController), "GetEffectiveLevel")]
         // ReSharper disable once UnusedMember.Local
         private static class MoreCharacterLevelPatch1
@@ -3396,6 +3458,18 @@ namespace CraftMagicItems {
                 return true;
             }
         }
+
+        /*
+        [Harmony12.HarmonyPatch(typeof(Kingmaker.UnitLogic.Spellbook), "AddCasterLevel")]
+        // ReSharper disable once UnusedMember.Local
+        private static class MoreCharacterLevelPatch7
+        {
+            private static void Postfix(ref Kingmaker.UnitLogic.Spellbook __instance, int ___m_CasterLevelInternal)
+            {
+                ModEntry.Logger.Warning($"After function, m_CasterLevelInternal is {___m_CasterLevelInternal} while MaxSpellLevel is {__instance.MaxSpellLevel}");
+            }
+        }
+        */
 
         /* random dungeon stuff */
         /* log the dungeon stages */
