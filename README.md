@@ -4,16 +4,20 @@ For details, see the mod page here: https://www.nexusmods.com/pathfinderkingmake
 
 ## To Do
 
-* If bonded item feature is missing but the character has a bonded item (e.g. respec), revert the item and remove the buff.
-* Enchantments with restrictions (such as Celestial "minimum +3") should be displayed in the UI.
-* Make characters in town work from the "stash" (and their own equipment) rather than from the party inventory.
+* Oversize weapon (+ Impact?) shows base damage on item card.
+* Someone reported swapping bonded ring between ring slots made it vanish.
+* After upgrading the Cloak of Sold Souls a few times its effects duplicate, I have 2 -4 penalties to con and I get +4 to necromancy spells DC
 * On load, Fast Healing 1 effect from regeneration ring becomes Fast Healing 5... doesn't change GUID?
 * It's possible to sell your bonded item to a merchant, and the "downgraded" version appears in your inventory, so you
         can re-equip it and do it again.
-* Alchemist / Grenadier archetype shouldn't get Brew Potion
-* After upgrading the Cloak of Sold Souls a few times its effects duplicate, I have 2 -4 penalties to con and I get +4 to necromancy spells DC
-
 * Rebase custom items on more valuable vanilla items?  E.g. increasing the enhancement bonus of a magic weapon might change to being based on the vanilla weapon with that bonus.
+* Undead characters (Jaethal) eat rations and sleep normally.  Could give them the benefits of Sustenance...
+* Craft Rod.
+* Mechanism for 3rd party mods to add more recipes, either for vanilla enchantments or their own custom enchantments.
+
+
+* Enchantments with restrictions (such as Celestial "minimum +3") should be displayed in the UI.
+* Make characters in town work from the "stash" (and their own equipment) rather than from the party inventory.
 * Trailblazer's Helm can cast two different spells!
 * Perhaps crafting projects for characters in your party should be advanced at the adventuring rate when you first enter
         the capital, to account things more accurately?
@@ -25,14 +29,12 @@ For details, see the mod page here: https://www.nexusmods.com/pathfinderkingmake
 * Remove assumption that GUIDs are 32 characters long, given more mods with custom GUIDs are becoming available.
 * In BuildCustomRecipeItemGuid, sort enchantments and remove GUIDs lexographically so blueprint is always the same.
 * Add "Fabricate" custom spell to instantly do mundane crafting, and to add special materials to existing items.
-* Make Robes fall under Craft Wondrous Items rather than Arms and Armor.  "Monk's Robe"
 * Ioun stone enchantments?  Could also do as a specific item recipe, a la Bag of Holding.
 * Custom "quiver" items which can contain arrows of a particular type, which modify the damage of any ranged weapons you
         use when they're equipped in your belt slots?
 * Metamagic effects on spells
 * Dragonhide is called "dragonscale".  Ironwood?
 * Request for https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/page-of-spell-knowledge/
-* Wild enchantment, which allows a druid to retain an armor's bonus when they shapeshift.
 
 * Mighty Fists enchantment is stacking - looks like a bug in Owlcat's code
 * Tabletop Amulet of Mighty Fists actually allows all relevant weapon enhancements (such as Flaming or Agile)... not
@@ -41,7 +43,6 @@ For details, see the mod page here: https://www.nexusmods.com/pathfinderkingmake
 * Craft Rod?
 * In-game GUI
 * Bracers of archery (lesser/greater) - requires both Craft Wondrous Items and Craft Arms and Armor
-* Fortification enchantment - doesn't appear to be in the base game?
 * Craft Construct?  Either a build-your-own-pet, Eidolon style, or a Golem-in-a-bottle like arrangement.
 
 there are some dragonhide equipment entities, but there doesn't seem to be any blueprints associated with them?

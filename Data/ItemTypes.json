@@ -66,6 +66,10 @@
     "MinimumCasterLevel": 3,
     "PrerequisitesMandatory": false,
     "NewItemBaseIDs": [
+      "b5a204f4311dafe42ab06d1d8ee7c1b9",
+      "beba168ccba9ccd4facd66d99ef031ef",
+      "86f0292dc48f0e8458384f9198f4db81",
+      "028cee4babc7c9c4d95043fc4a1f4359",
       "ec34985b81b9f744488456e7009044ee",
       "5e94d9ac3448c774db72a51007aab1df",
       "be3cadb084c816448b873dd791eec3e4",
@@ -103,7 +107,8 @@
       "fedfe06fec617c8429b2db25eb584cd6#CraftMagicItems(enchantments=(),visual=1575d992db377af4298d966cdeaca1be)"
     ],
     "RecipeFileNames": ["CommonRecipes.json", "CommonRecipesExtra.json", "WondrousRecipes.json", "WondrousRecipesExtra.json"],
-    "Slots": ["Belt", "Feet", "Gloves", "Head", "Neck", "Shoulders", "Wrist", "Usable"]
+    "Slots": ["Armor", "Belt", "Feet", "Gloves", "Head", "Neck", "Shoulders", "Wrist", "Usable"],
+    "SlotRestrictions": ["ArmourOnlyRobes"]
   },
   {
     "DataType": "RecipeBased",
@@ -113,7 +118,8 @@
     "MinimumCasterLevel": 5,
     "PrerequisitesMandatory": false,
     "RecipeFileNames": ["ArmsArmourRecipes.json", "ArmsArmourRecipesExtra.json"],
-    "Slots": ["Armor", "Shield", "Weapon"]
+    "Slots": ["Armor", "Shield", "Weapon"],
+    "SlotRestrictions": ["ArmourExceptRobes"]
   },
   {
     "DataType": "RecipeBased",
@@ -223,7 +229,8 @@
       "d23f6f5d3cbf715488b1f73e130dca99",
       "2ae1cfe7ea8e60d459948193b6a0f7fe",
       "201f6150321e09048bd59e9b7f558cb0",
-      "6d40d84e239bdf345b349ff52e3c00a9"
+      "6d40d84e239bdf345b349ff52e3c00a9",
+      "b9ed902d07b622b4f8ec223808f754c1"
     ],
     "MundaneBaseDC": 15,
     "MundaneEnhancementsStackable": true,
@@ -256,7 +263,10 @@
       "b665770f14e49bc49999d7c3c11c1d61",
       "215d900cb16e641408fdbcc320eb371e",
       "ff406b9b549af4a4ead4bb180b6d0978",
-      "b50d6e17d6c3c244c84a42b49edda025"
+      "b50d6e17d6c3c244c84a42b49edda025",
+      "310257322f1f424429243b4d78e79a43",
+      "ab88f557dcf30bb4cb0b758c72cec08e",
+      "dda1a4f8cbf8ad34ca7845ca17313e86"
     ],
     "MundaneBaseDC": 18,
     "MundaneEnhancementsStackable": true,

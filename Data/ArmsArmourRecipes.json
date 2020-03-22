@@ -113,6 +113,37 @@
     "Restrictions": ["ArmourMetal", "EnhancmentBonus3"]
   },
   {
+    "Name": "Wild",
+    "NameId": "craftMagicItems-enchantment-wild-name",
+    "Enchantments": [
+      "dd0e096412423d646929d9b945fd6d4c#CraftMagicItems(wildEnchantment)"
+    ],
+    "CasterLevelStart": 9,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": [
+      "3105d6e9febdc3f41a08d2b7dda1fe74"
+    ],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 3,
+    "OnlyForSlots": ["Armor", "Shield"]
+  },
+  {
+    "Name": "Fortification",
+    "NameId": "craftMagicItems-enchantment-fortification-name",
+    "Enchantments": [
+      "dd0e096412423d646929d9b945fd6d4c#CraftMagicItems(Component[0].Feature=3acd292384279f34e859992011344967,Component[0].Feature.m_DisplayName=craftMagicItems-enchantment-light-fortification-name,Component[0].Feature.m_Description=craftMagicItems-enchantment-light-fortification-description,Component[0].Feature.Components[0].Bonus=25,nameId=craftMagicItems-enchantment-light-fortification-name,descriptionId=craftMagicItems-enchantment-light-fortification-description)",
+      "dd0e096412423d646929d9b945fd6d4c#CraftMagicItems(Component[0].Feature=3acd292384279f34e859992011344967,Component[0].Feature.m_DisplayName=craftMagicItems-enchantment-medium-fortification-name,Component[0].Feature.m_Description=craftMagicItems-enchantment-medium-fortification-description,nameId=craftMagicItems-enchantment-medium-fortification-name,descriptionId=craftMagicItems-enchantment-medium-fortification-description)",
+      "dd0e096412423d646929d9b945fd6d4c#CraftMagicItems(Component[0].Feature=3acd292384279f34e859992011344967,Component[0].Feature.m_DisplayName=craftMagicItems-enchantment-heavy-fortification-name,Component[0].Feature.m_Description=craftMagicItems-enchantment-heavy-fortification-description,Component[0].Feature.Components[0].Bonus=75,nameId=craftMagicItems-enchantment-heavy-fortification-name,descriptionId=craftMagicItems-enchantment-heavy-fortification-description)"
+    ],
+    "CasterLevelStart": 13,
+    "CasterLevelMultiplier": 0,
+    "PrerequisiteSpells": [],
+    "CostType": "EnhancementLevelSquared",
+    "CostFactor": 2,
+    "CostAdjustment": -1,
+    "OnlyForSlots": ["Armor", "Shield"]
+  },
+  {
     "Name": "ShieldEnhancementBonus",
     "NameId": "7901b076-42d2-401e-a8e3-9ce0d4aa12df",
     "Enchantments": [
@@ -630,10 +661,12 @@
     "Name": "WeaponThundering",
     "NameId": "a79f0833-e4ec-4a67-ae75-1508ad54648b",
     "Enchantments": [
-      "690e762f7704e1f4aa1ac69ef0ce6a96"
+      "690e762f7704e1f4aa1ac69ef0ce6a96",
+      "3f032a3cd54e57649a0cdad0434bf221#CraftMagicItems(Component[0].Element=Sonic,nameId=craftMagicItems-enchantment-thundering-burst-name,descriptionId=craftMagicItems-enchantment-thundering-burst-description)"
     ],
+    "EnchantmentsCumulative": true,
     "CasterLevelStart": 5,
-    "CasterLevelMultiplier": 0,
+    "CasterLevelMultiplier": 7,
     "PrerequisiteSpells": ["f09453607e683784c8fca646eec49162"],
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 1,
