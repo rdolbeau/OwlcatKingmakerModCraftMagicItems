@@ -2294,6 +2294,47 @@ namespace CraftMagicItems {
                 // And stop upgrading the item, if relevant.
                 upgradingBlueprint = null;
             }
+            if (IsMundaneCraftingData(craftingData) && (upgradeItem == null) && (recipe == null) &&(Game.Instance.Player.Money > (5*goldCost)))
+            {
+                label = L10NFormat("craftMagicItems-label-craft-item", custom, "5* " + itemBlueprint.Name, "5*" + cost);
+                if (GUILayout.Button(label, GUILayout.ExpandWidth(false)))
+                {
+                    // Pay gold and material components up front.
+                    if (ModSettings.CraftingCostsNoGold)
+                    {
+                        goldCost = 0;
+                    }
+                    else
+                    {
+                        Game.Instance.UI.Common.UISound.Play(UISoundType.LootCollectGold);
+                        Game.Instance.Player.SpendMoney(5 * goldCost);
+                    }
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        var resultItem = BuildItemEntity(itemBlueprint, craftingData, caster);
+                        AddBattleLogMessage(L10NFormat("craftMagicItems-logMessage-begin-crafting", cost, itemBlueprint.Name), resultItem);
+                        if (ModSettings.CraftingTakesNoTime)
+                        {
+                            CraftItem(resultItem, upgradeItem);
+                        }
+                        else
+                        {
+                            var project = new CraftingProjectData(caster, requiredProgress, goldCost, casterLevel, resultItem, craftingData.Name, recipe?.Name,
+                                recipe?.PrerequisiteSpells ?? new BlueprintAbility[0], recipe?.AnyPrerequisite ?? false, upgradeItem,
+                                recipe?.CrafterPrerequisites ?? new CrafterPrerequisiteType[0]);
+                            AddNewProject(caster.Descriptor, project);
+                            CalculateProjectEstimate(project);
+                            currentSection = OpenSection.ProjectsSection;
+                        }
+                    }
+
+                    // Reset base GUID for next item
+                    selectedBaseGuid = null;
+                    // And stop upgrading the item, if relevant.
+                    upgradingBlueprint = null;
+                }
+            }
         }
 
         public static LocalizedString BuildCustomRecipeItemDescription(BlueprintItem blueprint, IEnumerable<BlueprintItemEnchantment> enchantments,
