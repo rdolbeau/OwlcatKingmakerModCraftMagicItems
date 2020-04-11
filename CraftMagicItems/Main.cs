@@ -1147,7 +1147,7 @@ namespace CraftMagicItems {
             if (upgradeItem?.Blueprint.ItemType == ItemsFilter.ItemType.Shield && (selectedRecipe.OnlyForSlots?.Contains(ItemsFilter.ItemType.Weapon) ?? false)
                                                                                && selectedRecipe.CanApplyToMundaneItem) {
                 RenderLabel("<color=red><b>Warning:</b></color> placing weapon enchantments on a shield is only useful if you are able to shield-bash, using " +
-                            "the shield as a weapon.  To improve the shield's bonus to AC, use \"Shield enhancment\" instead.");
+                            "the shield as a weapon.  To improve the shield's bonus to AC, use \"Shield enhancement\" instead.");
             }
 
             GUILayout.BeginHorizontal();
