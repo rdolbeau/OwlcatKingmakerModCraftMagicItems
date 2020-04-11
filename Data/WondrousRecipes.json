@@ -34,7 +34,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["5b77d7cc65b8ab74688e74a37fc2f553"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": 5
   },
   {
     "Name": "UnarmedAttacks",
@@ -85,7 +86,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": ["9e1ad5d6f87d19e4d8883d63a6e35568"],
     "CostType": "LevelSquared",
-    "CostFactor": 1000
+    "CostFactor": 1000,
+    "lvlAbuse": 8
   },
   {
     "Name": "MovementSpeed",
@@ -123,7 +125,8 @@
     "PrerequisiteSpells": [],
     "CrafterPrerequisites": ["FeatureChannelEnergy"],
     "CostType": "LevelSquared",
-    "CostFactor": 4000
+    "CostFactor": 4000,
+    "lvlAbuse": 2
   },
   {
     "Name": "NegativeChanneling",
@@ -142,7 +145,8 @@
     "PrerequisiteSpells": [],
     "CrafterPrerequisites": ["FeatureChannelEnergy"],
     "CostType": "LevelSquared",
-    "CostFactor": 4000
+    "CostFactor": 4000,
+    "lvlAbuse": 2
   },
   {
     "Name": "BagOfHolding",

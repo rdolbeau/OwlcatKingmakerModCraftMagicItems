@@ -14,7 +14,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["6a234c6dcde7ae94e94e9c36fd1163a7", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
   {
     "Name": "DexterityBonusInsight",
@@ -31,7 +32,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["1f6c94d56f178b84ead4c02f1b1e1c48", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
   {
     "Name": "ConstitutionBonusInsight",
@@ -48,7 +50,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["f6bcea6db14f0814d99b54856e918b92", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
   {
     "Name": "IntelligenceBonusInsight",
@@ -65,7 +68,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["2b24159ad9907a8499c2313ba9c0f615", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
   {
     "Name": "WisdomBonusInsight",
@@ -82,7 +86,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["9f5ada581af3db4419b54db77f44e430", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
   {
     "Name": "CharismaBonusInsight",
@@ -99,7 +104,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["2caa607eadda4ab44934c5c9875e01bc", "1f01a098d737ec6419aedc4e7ad61fdd"],
     "CostType": "LevelSquared",
-    "CostFactor": 2000
+    "CostFactor": 2000,
+    "lvlAbuse": -1
   },
 
 {
@@ -123,7 +129,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillKnowledgeArcana",
@@ -146,7 +153,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillKnowledgeWorld",
@@ -169,7 +177,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillLoreNature",
@@ -192,7 +201,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillLoreReligion",
@@ -215,7 +225,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillMobility",
@@ -238,7 +249,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillPerception",
@@ -261,7 +273,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillPersuasion",
@@ -284,7 +297,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillStealth",
@@ -307,7 +321,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillTrickery",
@@ -330,7 +345,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
   {
     "Name": "SkillUseMagicDevice",
@@ -353,7 +369,8 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "1f01a098d737ec6419aedc4e7ad61fdd" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   },
 
 
@@ -627,6 +644,7 @@
     "CasterLevelMultiplier": 2,
     "PrerequisiteSpells": [ "061041f379a5ced4090e49ac0e69cc4e" ],
     "CostType": "LevelSquared",
-    "CostFactor": 300
+    "CostFactor": 300,
+    "lvlAbuse": -1
   }
 ]

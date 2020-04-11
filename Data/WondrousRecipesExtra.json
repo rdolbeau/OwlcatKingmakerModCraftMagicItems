@@ -16,7 +16,8 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["061041f379a5ced4090e49ac0e69cc4e"],
     "CostType": "LevelSquared",
-    "CostFactor": 5000
+    "CostFactor": 5000,
+    "lvlAbuse": 2
   },
   {
     "Name": "ManualOfBodilyHealth",
@@ -28,7 +29,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "ManualOfGainfulExercise",
@@ -40,7 +42,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "ManualOfQuicknessOfAction",
@@ -52,7 +55,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "TomeOfClearThought",
@@ -64,7 +68,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "TomeOfLeadershipAndInfluence",
@@ -76,7 +81,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "TomeOfUnderstanding",
@@ -88,7 +94,8 @@
     "CostType": "Flat",
     "CostFactor": 105000,
     "CostFactorOverride": true,
-    "OnlyForSlots": ["Usable"]
+    "OnlyForSlots": ["Usable"],
+    "lvlAbuse": -1
   },
   {
     "Name": "ManticoreSkinBoots",

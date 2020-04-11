@@ -1150,6 +1150,20 @@ namespace CraftMagicItems {
                             "the shield as a weapon.  To improve the shield's bonus to AC, use \"Shield enhancement\" instead.");
             }
 
+            if (casterLevel > 20) {
+                RenderLabel("<color=orange><b>Warning:</b></color> The selected enchantement has a caster level over 20. Such \"Epic\" level costs twice as much.");
+            }
+            if (selectedRecipe.UseItem != null)
+            {
+                RenderLabel("<color=orange><b>Warning:</b></color> The selected item uses up a material component. In this version, the material component will <color=reb>not</color> be returned to your party if you cancel the crafting project.");
+            }
+
+            int lvlUsed = (selectedEnchantment == null ? 0 :
+                             selectedRecipe.Enchantments.IndexOf(selectedEnchantment));
+            if ((selectedRecipe.lvlAbuse != 0) && (selectedRecipe.lvlAbuse <= lvlUsed)) {
+                RenderLabel("<color=orange><b>Warning:</b></color> The selected enchantement has been flagged in the Mods a \"perhaps a bit too much\" for the game. You've been warned :-)");
+            }
+
             GUILayout.BeginHorizontal();
             GUILayout.Label("Prerequisites: ", GUILayout.ExpandWidth(false));
             var prerequisites = $"{CasterLevelLocalized} {casterLevel}";

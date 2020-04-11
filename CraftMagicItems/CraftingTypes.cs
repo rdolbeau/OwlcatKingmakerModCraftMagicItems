@@ -136,6 +136,7 @@ namespace CraftMagicItems {
         [JsonProperty] public int CostFactor;
         [JsonProperty] public bool CostFactorOverride;
         [JsonProperty] public BlueprintItem UseItem;
+        [JsonProperty] public int lvlAbuse;
 
         [JsonProperty] public int CostAdjustment;
 

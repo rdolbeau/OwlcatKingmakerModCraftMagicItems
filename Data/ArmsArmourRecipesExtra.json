@@ -13,7 +13,8 @@
     "PrerequisiteSpells": ["0413915f355a38146bc6ad40cdf27b3f"],
     "CostType": "CasterLevel",
     "CostFactor": 10000,
-    "OnlyForSlots": ["Armor", "Shield"]
+    "OnlyForSlots": ["Armor", "Shield"],
+    "lvlAbuse": -1
   },
   {
     "Name": "ArmourGrenadier",
@@ -26,7 +27,8 @@
     "PrerequisiteSpells": [ "9d504f8dff6e93b4ab6afc938ed6a23d" ],
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 2,
-    "OnlyForSlots": ["Armor"]
+    "OnlyForSlots": ["Armor"],
+    "lvlAbuse": -1
   },
   {
     "Name": "WeaponBleed",
@@ -40,7 +42,8 @@
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 2,
     "OnlyForSlots": ["Weapon"],
-    "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"]
+    "Restrictions": ["WeaponMelee", "WeaponNotBludgeoning"],
+    "lvlAbuse": -1
   },
   {
     "Name": "Destructive",
@@ -54,7 +57,8 @@
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 3,
     "OnlyForSlots": ["Weapon"],
-    "Restrictions": ["WeaponMelee"]
+    "Restrictions": ["WeaponMelee"],
+    "lvlAbuse": -1
   },
   {
     "Name": "WeaponProtector",
@@ -67,6 +71,7 @@
     "PrerequisiteSpells": [ ],
     "CostType": "EnhancementLevelSquared",
     "CostFactor": 1,
-    "OnlyForSlots": ["Weapon"]
+    "OnlyForSlots": ["Weapon"],
+    "lvlAbuse": -1
   }
 ]
