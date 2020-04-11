@@ -144,5 +144,29 @@
     "CostFactor": 1800,
     "UseItem": "47c119efd92c6904f9543b685d1e2bdc",
     "OnlyForSlots": ["Shoulders"]
+  },
+  {
+    "Name": "WinterWolfCloak",
+    "NameId": "27c02b3d-6480-4ef6-af47-b3708d209562",
+    "Enchantments": [],
+    "ResultItem": "77491022ca26d194fbee5e04395ae967",
+    "CasterLevelStart": 7,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 46000,
+    "UseItem": "b5ae97e5683cbfb45a4331a006cc4112",
+    "OnlyForSlots": ["Shoulders"]
+  },
+  {
+    "Name": "BearCloak",
+    "NameId": "dac70ecb-d59f-43fe-a8d3-df5f4ea62c51",
+    "Enchantments": [],
+    "ResultItem": "9af35985be20c384a957e5c7dfdb41f2",
+    "CasterLevelStart": 7,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 46000,
+    "UseItem": "85854c608e9f5774ea0ee9e50c693656",
+    "OnlyForSlots": ["Shoulders"]
   }
 ]
