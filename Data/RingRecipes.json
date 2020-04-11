@@ -16,7 +16,8 @@
     "PrerequisiteSpells": ["183d5bb91dea3a1489a6db6c9cb64445"],
     "CostType": "LevelSquared",
     "CostFactor": 2000,
-    "OnlyForSlots": ["Ring"]
+    "OnlyForSlots": ["Ring"],
+    "lvlAbuse": 5
   },
   {
     "Name": "Evasion",
