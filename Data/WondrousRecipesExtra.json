@@ -16,7 +16,7 @@
     "CasterLevelMultiplier": 3,
     "PrerequisiteSpells": ["061041f379a5ced4090e49ac0e69cc4e"],
     "CostType": "LevelSquared",
-    "CostFactor": 5000,
+    "CostFactor": 2000,
     "lvlAbuse": 2
   },
   {
