@@ -2232,6 +2232,10 @@ namespace CraftMagicItems {
         private static void RenderRecipeBasedCraftItemControl(UnitEntityData caster, ItemCraftingData craftingData, RecipeData recipe, int casterLevel,
             BlueprintItem itemBlueprint, ItemEntity upgradeItem = null) {
             var requiredProgress = (itemBlueprint.Cost - (upgradeItem?.Blueprint.Cost ?? 0)) / 4;
+            if (recipe.CostFactorOverride) {
+                ModEntry.Logger.Warning($"Required Progress is {requiredProgress} from {itemBlueprint.Cost} but {recipe.CostFactor}, overriding");
+                requiredProgress = recipe.CostFactor / 4;
+            }
             var goldCost = (int) Mathf.Round(requiredProgress * ModSettings.CraftingPriceScale);
             if (IsMundaneCraftingData(craftingData)) {
                 // For mundane crafting, the gold cost is less, and the cost of the recipes don't increase the required progress.

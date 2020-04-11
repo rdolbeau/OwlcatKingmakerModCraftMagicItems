@@ -26,7 +26,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   },
   {
@@ -37,7 +38,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   },
   {
@@ -48,7 +50,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   },
   {
@@ -59,7 +62,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   },
   {
@@ -70,7 +74,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   },
   {
@@ -81,7 +86,8 @@
     "CasterLevelStart": 17,
     "PrerequisiteSpells": [],
     "CostType": "Flat",
-    "CostFactor": 110000,
+    "CostFactor": 105000,
+    "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
   }
 ]

@@ -134,6 +134,7 @@ namespace CraftMagicItems {
         public RecipeCostType CostType;
 
         [JsonProperty] public int CostFactor;
+        [JsonProperty] public bool CostFactorOverride;
 
         [JsonProperty] public int CostAdjustment;
 
