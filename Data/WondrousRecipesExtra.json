@@ -89,5 +89,53 @@
     "CostFactor": 105000,
     "CostFactorOverride": true,
     "OnlyForSlots": ["Usable"]
+  },
+  {
+    "Name": "ManticoreSkinBoots",
+    "NameId": "37af90d3-87ef-47c4-b588-321bb3bd6333",
+    "Enchantments": [],
+    "ResultItem": "f52308050f98ebe4a8e22f05024ddc94",
+    "CasterLevelStart": 9,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 67000,
+    "UseItem": "450b2d61817be2248ae85f1dccb0fbe1",
+    "OnlyForSlots": ["Feet"]
+  },
+  {
+    "Name": "OwlbearSkinBoots",
+    "NameId": "01531291-1aa3-4afe-9dff-538a23a01334",
+    "Enchantments": [],
+    "ResultItem": "29ec0781b00678541acd9d0f30043967",
+    "CasterLevelStart": 7,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 47000,
+    "UseItem": "52ca74e9e059f9d42b32f89a82c02744",
+    "OnlyForSlots": ["Feet"]
+  },
+  {
+    "Name": "OwlbearFurHelmet",
+    "NameId": "b1371ed7-bf4d-4959-bdc3-f168bad10790",
+    "Enchantments": [],
+    "ResultItem": "282393f860a510b429432e13943f27c0",
+    "CasterLevelStart": 5,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 15000,
+    "UseItem": "52ca74e9e059f9d42b32f89a82c02744",
+    "OnlyForSlots": ["Head"]
+  },
+  {
+    "Name": "WyvernSkinCloak",
+    "NameId": "9d91c95a-ed66-49c1-a820-e90539ade747",
+    "Enchantments": [],
+    "ResultItem": "b20919f1a98333f449956f0380fae855",
+    "CasterLevelStart": 3,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 1800,
+    "UseItem": "47c119efd92c6904f9543b685d1e2bdc",
+    "OnlyForSlots": ["Shoulders"]
   }
 ]

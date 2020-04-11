@@ -2070,7 +2070,8 @@ namespace CraftMagicItems {
 
         private static bool BuildCostString(out string cost, ItemCraftingData craftingData, int goldCost,
             IEnumerable<BlueprintAbility> spellBlueprintArray = null,
-            BlueprintItem resultBlueprint = null, BlueprintItem upgradeBlueprint = null) {
+            BlueprintItem resultBlueprint = null, BlueprintItem upgradeBlueprint = null,
+            BlueprintItem useBlueprint = null) {
             var canAfford = true;
             if (ModSettings.CraftingCostsNoGold) {
                 cost = new L10NString("craftMagicItems-label-cost-free");
@@ -2092,6 +2093,16 @@ namespace CraftMagicItems {
                                 }
                             }
                         }
+                    }
+                }
+                if (useBlueprint != null) {
+                    if (itemTotals.ContainsKey(useBlueprint))
+                    {
+                        itemTotals[useBlueprint] ++;
+                    }
+                    else
+                    {
+                        itemTotals[useBlueprint] = 1;
                     }
                 }
 
@@ -2254,7 +2265,7 @@ namespace CraftMagicItems {
             }
 
             var canAfford = BuildCostString(out var cost, craftingData, goldCost, recipe?.PrerequisiteSpells ?? new BlueprintAbility[0],
-                itemBlueprint, upgradeItem?.Blueprint);
+                itemBlueprint, upgradeItem?.Blueprint, recipe.UseItem);
             var custom = itemBlueprint.AssetGuid.Contains(CraftMagicItemsBlueprintPatcher.BlueprintPrefix)
                 ? new L10NString("craftMagicItems-label-custom").ToString()
                 : "";
