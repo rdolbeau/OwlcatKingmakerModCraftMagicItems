@@ -73,5 +73,17 @@
     "CostFactor": 1,
     "OnlyForSlots": ["Weapon"],
     "lvlAbuse": -1
+  },
+  {
+    "Name": "LinnormHide",
+    "NameId": "d24adb9d-35cd-400a-9372-8928a776875b",
+    "Enchantments": [],
+    "ResultItem": "8fa54f5d50b3fd44abb6e5045f6e3fcb",
+    "CasterLevelStart": 9,
+    "PrerequisiteSpells": [],
+    "CostType": "Flat",
+    "CostFactor": 73900,
+    "UseItem": "ba2f26d2188cc5641b1db51e20b5cb5c",
+    "OnlyForSlots": "Armor"
   }
 ]
