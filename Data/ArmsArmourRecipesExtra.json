@@ -84,6 +84,6 @@
     "CostType": "Flat",
     "CostFactor": 73900,
     "UseItem": "ba2f26d2188cc5641b1db51e20b5cb5c",
-    "OnlyForSlots": "Armor"
+    "OnlyForSlots": ["Armor"]
   }
 ]
