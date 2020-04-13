@@ -1151,16 +1151,16 @@ namespace CraftMagicItems {
             }
 
             if (casterLevel > 20) {
-                RenderLabel("<color=orange><b>Warning:</b></color> The selected enchantement has a caster level over 20. Such \"Epic\" level costs twice as much.");
+                RenderLabel("<color=yellow><b>Warning:</b></color> The selected enchantement has a caster level over 20. Such \"Epic\" level costs twice as much.");
             }
-            if (selectedRecipe.UseItem != null)
+            if (selectedRecipe?.UseItem != null)
             {
                 RenderLabel("<color=orange><b>Warning:</b></color> The selected item uses up a material component. In this version, the material component will <color=reb>not</color> be returned to your party if you cancel the crafting project.");
             }
 
             int lvlUsed = (selectedEnchantment == null ? 0 :
                              selectedRecipe.Enchantments.IndexOf(selectedEnchantment));
-            if ((selectedRecipe.lvlAbuse != 0) && (selectedRecipe.lvlAbuse <= lvlUsed)) {
+            if ((selectedRecipe?.lvlAbuse != 0) && (selectedRecipe?.lvlAbuse <= lvlUsed)) {
                 RenderLabel("<color=orange><b>Warning:</b></color> The selected enchantement has been flagged in the Mods a \"perhaps a bit too much\" for the game. You've been warned :-)");
             }
 
@@ -2279,7 +2279,7 @@ namespace CraftMagicItems {
             }
 
             var canAfford = BuildCostString(out var cost, craftingData, goldCost, recipe?.PrerequisiteSpells ?? new BlueprintAbility[0],
-                itemBlueprint, upgradeItem?.Blueprint, recipe.UseItem);
+                itemBlueprint, upgradeItem?.Blueprint, recipe?.UseItem);
             var custom = itemBlueprint.AssetGuid.Contains(CraftMagicItemsBlueprintPatcher.BlueprintPrefix)
                 ? new L10NString("craftMagicItems-label-custom").ToString()
                 : "";
